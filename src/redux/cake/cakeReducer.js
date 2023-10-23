@@ -1,3 +1,4 @@
+
 const initialState = {
   numOfCake: 10,
 };
