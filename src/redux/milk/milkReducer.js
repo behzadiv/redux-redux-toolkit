@@ -4,7 +4,7 @@ const initialState = {
   numOfMilk: 20,
 };
 
-export function MilkReducer(state = initialState, action) {
+export default function MilkReducer(state = initialState, action) {
   switch (action.type) {
     case BUY_MILK:
       return {

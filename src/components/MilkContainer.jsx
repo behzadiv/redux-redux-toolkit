@@ -5,14 +5,14 @@ import { buyMilk } from "../redux/milk/milkActions";
 const MilkContainer = () => {
   const [value, setValue] = useState(0);
   const dispatch = useDispatch();
-  const state = useSelector((state) => state);
+  const state = useSelector((state) => state.milk);
 
   return (
     <div>
-      <h2>Number Of Milk : {state.numOfCake}</h2>
+      <h2>Number Of Milk : {state.numOfMilk}</h2>
       <div>
         <input type="number" onChange={(e) => setValue(e.target.value)} />
-        <button onClick={() => buyMilk(value)}>Buy milk</button>
+        <button onClick={() => dispatch(buyMilk(value))}>Buy milk</button>
       </div>
     </div>
   );
