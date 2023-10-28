@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { buyMilk } from "../redux/milk/milkActions";
+import { buyMilk } from "../features/milk/milkActions";
 
 const MilkContainer = () => {
   const [value, setValue] = useState(0);

@@ -3,15 +3,15 @@ import "./App.css";
 import CakeContainer from "./components/CakeContainer";
 import MilkContainer from "./components/MilkContainer";
 import User from "./components/User";
-import store from "./redux/store";
+import store from "./features/store";
 
 function App() {
   return (
     <Provider store={store}>
       <CakeContainer />
-      <MilkContainer />
+      {/* <MilkContainer />
       <hr />
-      <User />
+      <User /> */}
     </Provider>
   );
 }
