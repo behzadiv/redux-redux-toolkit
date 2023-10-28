@@ -9,9 +9,9 @@ function App() {
   return (
     <Provider store={store}>
       <CakeContainer />
-      {/* <MilkContainer />
+      <MilkContainer />
       <hr />
-      <User /> */}
+      {/* <User /> */}
     </Provider>
   );
 }
